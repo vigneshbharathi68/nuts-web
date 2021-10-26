@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>
+                The Nav
+            </h4>
+            
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Project</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main class="h-screen overflow-y-auto">
+        <!-- Hero section -->
+        <section class="home__section">
+            <div class="relative w-full h-full bg-black">
+                <div class="absolute w-full h-full bg-black bg-opacity-80">
+                    <div data-aos="zoom-in"
+                        class="max-w-4xl mx-auto h-full flex flex-col justify-center items-start gap-8
+                        sm:px-4 px-2">
+                        <h1 class="text-white text-2xl text-left font-semibold
+                        sm:text-4xl lg:text-5xl">
+                            We focus
+                            <strong style="color: #03b8eb">
+                                on the highest quality
+                            </strong>
+                            in every single thing that we do without compromise.
+                        </h1>
+                        <button style="background-color: #03b8eb;" 
+                        class="px-4 py-2 rounded-xl font-bold text-lg
+                        sm:text-xl">
+                            Read more
+                            <svg class="inline-block w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                        <h2 class="text-white text-center text-xl mt-4
+                        sm:text-3xl">
+                            Ask for our <span class="underline capitalize text-yellow-300">festive collection</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- background image for hero section -->
+                <img class="w-full h-full object-cover"
+                    src="https://i.pinimg.com/originals/f7/95/42/f79542013f14ac827cfe487cdb0e4e1d.jpg" alt="">
+            </div>
+        </section>
+        <!-- Nuts description section -->
+        <section class="home__section sm:px-4">
+            <div class="flex max-w-7xl items-start h-full mx-auto
+            sm:items-center">
+                <div class="h-2/3
+                lg:flex lg:flex-row sm:flex sm:flex-row">
+                    <div class="w-full h-5/6 pt-24 flex overflow-hidden items-start
+                    sm:w-full sm:h-full sm:justify-center sm:pt-0 lg:w-1/2 ">
+                        <img class="h-full object-contain" src="http://tshaw.in/wp-content/uploads/2020/11/All.jpg" alt="">
+                    </div>
+                    <div class="w-full h-full flex flex-col items-start px-2 
+                    sm:w-full sm:py-4 sm:gap-4 sm:items-center sm:justify-center sm:px-0 lg:w-1/2">
+                        <h1 style="color: #004255" 
+                        class="text-left lg:text-2xl font-semibold
+                        sm:text-xl">
+                            The nuttzz brand was formed with one clear-cut goal in mind—
+                            <strong style="color: #004255">
+                                to replace all the unnecessary excess calories
+                            </strong>
+                            gorged by people in the form of unhealthy snacks that is filled with trans fat, preservatives
+                            and other additives with a premium, high-quality, healthy and nutritious alternative that
+                            provides a wholesome and enjoyable experience.
+                        </h1>
+                        <p>To meet our ambitious goal, we focused on creating unique and innovative flavours by testing
+                            different flavour combinations and product iterations until we arrived at the absolute best of
+                            products which are delectable and satisfying to the extent that our customers will be raving
+                            about the taste and craving for more!</p>
+    
+                        <button style="background-color: #004255;" 
+                        class="px-4 py-2 text-white mt-4 rounded-xl font-bold text-xl">
+                            About us
+                            <svg class="inline-block w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Ecatelog section -->
+        <section class="home__section h-1/2 px-4" style="background-image: url('https://images.unsplash.com/photo-1554120013-4ba50c1a1788?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=500&q=60');
+        background-repeat: no-repeat; background-size: cover; background-position:top right;">
+            <div class="flex flex-col gap-4 max-w-7xl items-start justify-center h-full mx-auto">
+                <h1 style="color: #004255" class="text-left text-3xl font-semibold">
+                    Download out latest festive season<br> E-Catalog from here.
+                </h1>
+                <div class="w-96">
+                    <button style="background-color: #004255;" class="px-4 py-2 text-white mt-4 rounded-xl font-bold text-xl">
+                        Download 
+                        <svg class="inline-block w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+            </div>
+            <!-- <img class="w-30 w-full float-right animate-bounce" src="https://lh3.googleusercontent.com/proxy/3poEysxJWAU-zhfIUXRqECM6O3F_qbgW4vUP2C8khuBYpF9NU0eFRGwggKDlIoZdjb_u90fTHXqJtlEvvtS2SPTzCXf5GZ-zuldi0jDVYVJJdg"/> -->
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
